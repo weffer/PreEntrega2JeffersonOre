@@ -1,0 +1,45 @@
+/**
+**Mis CSS
+*/
+body {
+  background-color: #ffffff;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 1rem;
+}
+
+header {
+  background-image: url(../img/header.webp);
+  background-size: cover;
+  background-position: 50%;
+  background-size: cover;
+}
+
+.logo {
+  text-decoration: none;
+  color: #00111e;
+  font-family: "Roboto", cursive;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.text-header {
+  color: #00111e;
+  font-weight: 900;
+}
+
+.btn-bg {
+  background-color: #d0c438 !important;
+}
+
+.menu a:hover {
+  background-color: #d0c438;
+  color: white !important;
+}
+
+.sobre-nosotros {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background-color: #d0c438;
+}
