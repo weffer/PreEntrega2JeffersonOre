@@ -42,6 +42,14 @@ header {
   color: white !important;
 }
 
+.producto {
+  transition: all 0.3s;
+}
+
+.producto:hover {
+  transform: scale(1.15);
+}
+
 .sobre-nosotros {
   padding-top: 8rem;
   padding-bottom: 8rem;
