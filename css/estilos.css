@@ -24,6 +24,10 @@ header {
   font-size: 1.5rem;
 }
 
+.logo:hover {
+  color: #d0c438;
+}
+
 .text-header {
   color: #00111e;
   font-weight: 900;
