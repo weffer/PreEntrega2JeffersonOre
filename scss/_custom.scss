@@ -1,11 +1,27 @@
+//colores
+$color-principal: #cac94d;
+$color-secundario: #00111e;
+
+//fuentes
+$fuente-principal: "Roboto", sans-serif;
+
+//Modificar variables de bootstrap
+$primary: $color-principal;
+$font-family-base: $fuente-principal;
+
+$headings-font-weight: 900;
+$h1-font-size: 4.4rem;
+$h2-font-size: 3.6rem;
+$h3-font-size: 2.6rem;
+
+$btn-font-weight: 900;
+
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
+//Agregando css propios
 body {
   background-color: #f8f9fa;
-  color: black;
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  font-size: 1rem;
+  color: $color-secundario;
 }
 
 header {
@@ -17,53 +33,50 @@ header {
 
 .logo {
   text-decoration: none;
-  color: #00111e;
-  font-family: "Roboto", cursive;
+  color: $color-secundario;
+  font-family: $fuente-principal;
   font-weight: 400;
   font-size: 1.5rem;
-}
-
-.logo:hover {
-  color: #d0c438;
-}
-
-.text-header {
-  color: #00111e;
-  font-weight: 900;
-}
-
-.btn-bg {
-  background-color: #d0c438 !important;
+  &:hover {
+    color: $color-principal;
+  }
 }
 
 .menu a:hover {
-  background-color: #d0c438;
+  background-color: $color-principal;
   color: white !important;
 }
 
+.fw-back {
+  font-weight: 900;
+}
+
+//Agregar animacion a las imagenes de los productos
 .producto {
   transition: all 0.3s;
 }
 
+//al pasar el hover la escala de la imagen crece
 .producto:hover {
   transform: scale(1.15);
 }
 
+//agregando animacion a los cards de la seccion de blog
+//se agrega un box shadow al hacer hover
 .card {
   overflow: hidden;
   border: 0;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06), 0 2px 4px rgba(0, 0, 0, 0.07);
   transition: all 0.15s ease;
-}
-
-.card:hover {
-  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1), 0 10px 8px rgba(0, 0, 0, 0.015);
+  &:hover {
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1), 0 10px 8px rgba(0, 0, 0, 0.015);
+  }
 }
 
 .sobre-nosotros {
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background-color: #d0c438;
+  background-color: $color-principal;
 }
 
 span.carousel-control-next-icon {
